@@ -7,8 +7,8 @@ before('Opening EPAM site', function () {
 
 describe('Smoke suite', function () {
     const commonParent = '.section--hide-on-mobile ';
-    let keyWordOrIDInput = driver.findElement(by.css(commonParent + '.job-search__input'));
-    let findButton = driver.findElement(by.css(commonParent + '.job-search__submit'));
+    let keyWordOrIDInput = driver.findElement(by.css(commonParent + '.recruiting-search__input'));
+    let findButton = driver.findElement(by.css(commonParent + '.recruiting-search__submit'));
 
     describe('Sanity check', function () {
         let epamLogo = driver.findElement(by.css('.header__logo'));
@@ -18,8 +18,8 @@ describe('Smoke suite', function () {
     });
 
     describe('All the main elements should be visible on Carreer page', function () {
-        let keyWordOrIDInput = driver.findElement(by.css(commonParent + '.job-search__input'));
-        let locationDropdown = driver.findElement(by.css(commonParent + '.select-box-selection'));
+        let keyWordOrIDInput = driver.findElement(by.css(commonParent + '.recruiting-search__input'));
+        let locationDropdown = driver.findElement(by.css(commonParent + '.select2-selection'));
         let skillsSelector = driver.findElement(by.css(commonParent + '.multi-select-filter'));
 
         it('The "Keyword or job ID" input field should be visible', function () {
