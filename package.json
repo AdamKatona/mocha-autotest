@@ -1,6 +1,6 @@
 {
   "name": "mocha-autotest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Basic framework that can be put together quickly to start making automated tests.",
   "main": "index.js",
   "scripts": {
